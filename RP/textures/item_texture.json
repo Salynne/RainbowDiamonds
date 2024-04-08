@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "RainbowDiamonds",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"red_diamond": {
+			"textures": "textures/items/red/red_diamond"
+		},
+		"red_diamond_sword": {
+			"textures": "textures/items/red/red_diamond_sword"
+		}
+	}
+}

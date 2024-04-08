@@ -1,0 +1,42 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"salynne"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.16"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			20,
+			60
+		],
+		"uuid": "809f4e88-3c3c-4483-8bc6-817797b788c9",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "498426a3-acd8-470f-81fe-7d00a7ae3198",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

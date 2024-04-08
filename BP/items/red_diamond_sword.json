@@ -1,0 +1,47 @@
+{
+    "format_version": "1.20.20",
+    "minecraft:item": {
+        "description": {
+            "identifier": "rainbow_diamonds:red_diamond_sword",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.sword"
+            }
+        },
+        "components": {
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:diamond_tier",
+                    "minecraft:is_sword"
+                ]
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:durability": {
+                "max_durability": 1562 // Vanilla diamond durability
+            },
+            "minecraft:damage": 8, // Vanilla diamond damage amount
+            "minecraft:enchantable": {
+                "value": 10, // Vanilla diamond enchantable amount
+                "slot": "sword"
+            },
+            "minecraft:icon": {
+                "texture": "red_diamond_sword"
+            },
+            "minecraft:display_name": {
+                "value": "Red Diamond Sword"
+            },
+            // Allow the sword to be repaired with sticks
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "rainbow_diamonds:red_diamond"
+                        ],
+                        "repair_amount": 390 // Vanilla diamond repair amount (25%)
+                    }
+                ]
+            }
+        }
+    }
+}
