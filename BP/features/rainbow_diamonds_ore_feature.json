@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.20",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "rainbow_diamonds:rainbow_diamonds_ore_feature"
+    },
+    "count": 8, // Placement attempts
+    "replace_rules": [
+      {
+        // Replace all stone variants (andesite, granite, and diorite) with titanite ore
+        "places_block": "rainbow_diamonds:red_diamond",
+        "may_replace": ["minecraft:stone"]
+      }
+    ]
+  }
+}
