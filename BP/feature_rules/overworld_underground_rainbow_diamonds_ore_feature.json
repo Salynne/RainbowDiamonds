@@ -1,0 +1,47 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "rainbow_diamonds:overworld_underground_rainbow_diamonds_ore_feature",
+      "places_feature": "rainbow_diamonds:rainbow_diamonds_ore_feature"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "overworld"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "overworld_generation"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 10, // Placement attempts of the cluster, not the ore blocks
+      "coordinate_eval_order": "zyx",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      },
+      "y": {
+        "distribution": "uniform", // You can use "triangle" to make ores more common in the middle of the extent
+        "extent": [
+          0, // Minimum y level for the ore to generate
+          62 // Maximum y level for the ore to generate
+        ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      }
+    }
+  }
+}
